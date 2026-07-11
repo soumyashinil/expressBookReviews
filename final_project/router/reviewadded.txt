@@ -1,0 +1,6 @@
+
+curl --request POST http://localhost:5000/customer/login --header "Content-Type: application/json" --data '{"username":"soumya","password":"12345"}'
+User successfully logged in
+
+curl -b cookies.txt -X PUT "http://localhost:5000/customer/auth/review/1?review=ExcellentWork"
+The review for the book with ISBN 1 has been added/updated.

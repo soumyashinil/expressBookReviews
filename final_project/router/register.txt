@@ -1,0 +1,11 @@
+ curl --request POST http://localhost:5000/register  --heade
+r "Content-Type: application/json" --data '{"username":"soumya","p
+assword":"12345"}'
+{"message":"User registered successfully"}
+
+curl --request POSTct/ex
+://localhost:5000/register --header "Content-Type: application/json" --data '{"username":"soumya","password":"12345"}'
+{"message":"Username already exists"}
+
+curl --request POST http://localhost:5000/register  --header "Content-Type: application/json" --data '{"username":"","password":"12345"}'
+{"message":"Username and password are required"}
