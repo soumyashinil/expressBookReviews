@@ -1,6 +1,9 @@
-curl localhost:5000/title/Fairy%20tales
+curl --request GET  localhost:5000/title/Fairy%20tales
 [{"author":"Hans Christian Andersen","title":"Fairy tales","reviews":{}}]
 
-curl localhost:5000/title/The%20Alchemist
-{"message":"Books with title The Alchemist is not found"}
+curl --request GET localhost:5000/title/Fairy
+[{"author":"Hans Christian Andersen","title":"Fairy tales","reviews":{}}]
+
+ curl --request GET localhost:5000/title/one
+[{"author":"Unknown","title":"One Thousand and One Nights","reviews":{}},{"author":"Samuel Beckett","title":"Molloy, Malone Dies, The Unnamable, the trilogy","reviews":{}}]
 

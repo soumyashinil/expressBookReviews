@@ -5,4 +5,4 @@ curl localhost:5000/author/Jane%20Austen
 [{"author":"Jane Austen","title":"Pride and Prejudice","reviews":{}}]
 
  curl localhost:5000/author/Jan          
-{"message":"Book by the Author Jan not found"}
+[{"author":"Jane Austen","title":"Pride and Prejudice","reviews":{}}]
